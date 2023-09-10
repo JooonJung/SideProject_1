@@ -1,0 +1,58 @@
+.toggleContainer {
+  width: 200px; /* 버튼의 너비를 설정합니다. 원하는 크기로 조정할 수 있습니다. */
+}
+
+.toggleList {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.toggleList li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.toggleList li:last-child {
+  border-bottom: none;
+}
+
+.toggleBtnFilled {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: #ddd;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.toggleBtnNotFilled {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: #ddd;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.arrow {
+  margin-left: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+
+.arrow.up {
+  transform: rotate(-135deg);
+}
